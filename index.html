@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dice Game</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1 class="gameName">Dice Game</h1>
+      <div class="gameContainer">
+        <div class="gameStartBody">
+          <form id="gameSetup" class="gameSetupForm">
+            <div class="playerFormItem">
+              <label>Players</label>
+              <input
+                type="number"
+                name="playerCount"
+                min="2"
+                max="4"
+                placeholder="Player Count"
+              />
+            </div>
+
+            <div class="playerFormItem">
+              <label>Grid Length</label>
+              <input
+                type="number"
+                name="gridLength"
+                max="100"
+                min="20"
+                placeholder="Grid Length"
+              />
+            </div>
+            <div class="playerFormItemRow">
+              <button type="button" id="initGame">Start Game</button>
+              <button type="button" id="restartGame">Restart Game</button>
+              <button type="button" id="playGame">Roll Dice</button>
+            </div>
+          </form>
+          <div class="gameText" id="gameText"></div>
+        </div>
+        <div class="gameBody" id="gameBody"></div>
+      </div>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>

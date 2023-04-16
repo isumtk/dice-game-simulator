@@ -1,0 +1,170 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #101010;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 1280px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: inherit;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.gameName {
+  width: 100%;
+  padding: 0 1rem;
+  text-align: left;
+}
+
+.gameContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.gameStartBody {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 320px;
+}
+
+.gameSetupForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.gameText {
+  width: 100%;
+  text-align: left;
+  color: #f1f3f5;
+  font-size: 1.2rem;
+  line-height: 1.1;
+  display: flex;
+  flex: 1 1 0;
+  overflow-y: auto;
+  flex-direction: column;
+  padding: 0 8px;
+  scroll-behavior: smooth;
+  scroll-margin: 8px 0;
+  border-radius: 5px;
+}
+
+.gameTextHead {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1rem;
+  gap: 1rem;
+  margin: 5px 0;
+  background-color: #101010;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.gameBody {
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: inherit;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 4px;
+}
+
+.playerFormItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.playerFormItemRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.playerFormItemRow > button {
+  flex: 1 1 0;
+}
+
+.playerFormItem > input {
+  padding: 8px 16px;
+  font-size: 1.1rem;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+}
